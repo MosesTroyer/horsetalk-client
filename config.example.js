@@ -19,7 +19,7 @@ conf.servers = [];
 
 // Example server block
 conf.servers.push({
-    port:   7778,
+    port:   1337,
     address: "0.0.0.0"
 });
 
@@ -184,10 +184,10 @@ conf.quit_message = "http://www.kiwiirc.com/ - A hand-crafted IRC client";
 
 // Default settings for the client. These may be changed in the browser
 conf.client = {
-    server: 'irc.kiwiirc.com',
-    port:    6697,
+    server: '104.131.162.180',
+    port:    6667,
     ssl:     true,
-    channel: '#kiwiirc',
+    channel: '#zoo',
     channel_key: '',
     nick:    'kiwi_?',
     settings: {
@@ -215,9 +215,9 @@ conf.client_themes = [
 
 
 // If set, the client may only connect to this 1 IRC server
-//conf.restrict_server = "irc.kiwiirc.com";
-//conf.restrict_server_port = 6667;
-//conf.restrict_server_ssl = false;
+conf.restrict_server = "104.131.162.180";
+conf.restrict_server_port = 6667;
+conf.restrict_server_ssl = false;
 //conf.restrict_server_channel = "#kiwiirc";
 //conf.restrict_server_channel_key = "";
 //conf.restrict_server_password = "";
